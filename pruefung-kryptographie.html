@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>N.E.X.U.S. – Kryptographie</title>
+
+    <link rel="stylesheet" href="style-kryptographie.css">
+</head>
+
+
+<body class="kryptographie-seite">
+
+    <!-- =====================================
+         SYSTEMKOPF
+         ===================================== -->
+
+    <header class="systemleiste">
+
+        <div class="systemleiste-oben">
+
+            <!-- LINKS -->
+
+            <div class="systemstatus-kopf">
+
+                <div>
+                    <span class="status-punkt"></span>
+                    NETZWERK:
+                    <strong>ONLINE</strong>
+                </div>
+
+                <div>
+                    <span class="status-punkt"></span>
+                    VERBINDUNG:
+                    <strong>GESICHERT</strong>
+                </div>
+
+            </div>
+
+
+            <!-- MITTE -->
+
+            <div class="nexus-name">
+                N.E.X.U.S.
+            </div>
+
+
+            <!-- RECHTS -->
+
+            <div class="benutzer-info">
+
+                <span>
+                    RANG:
+                    <strong>NOVIZE</strong>
+                </span>
+
+                <span>
+                    BENUTZER:
+                    <strong>TEAM GEISTERFÜCHSE</strong>
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+
+            <a href="netzwerk.html">
+                START
+            </a>
+
+            <a href="#">
+                NACHRICHTEN
+            </a>
+
+
+            <div class="nav-dropdown">
+
+                <button
+                    class="nav-dropdown-button nav-aktiv"
+                    type="button">
+
+                    AUS- UND WEITERBILDUNG
+
+                    <span class="dropdown-pfeil">
+                        ▼
+                    </span>
+
+                </button>
+
+
+                <div class="nav-dropdown-inhalt">
+
+                    <a href="pruefungen.html">
+                        PRÜFUNGSMODUL
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <a href="#">
+                ARCHIV
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================
+         HAUPTBEREICH
+         ===================================== -->
+
+    <main class="krypto-hauptbereich">
+
+        <div class="nexus-wasserzeichen"></div>
+
+
+        <!-- PRÜFUNGSINHALT -->
+
+        <section class="krypto-inhalt">
+
+            <div class="pruefungs-kopf">
+
+                <p class="pruefungs-nummer">
+                    PRÜFUNG 01
+                </p>
+
+                <h1>
+                    KRYPTOGRAPHIE
+                </h1>
+
+                <p class="pruefungs-beschreibung">
+                    Codes entschlüsseln
+                </p>
+
+            </div>
+
+
+            <!-- ANWEISUNG -->
+
+            <div class="auftragsfenster">
+
+                <p class="fenster-titel">
+                    ANWEISUNG
+                </p>
+
+                <p class="anweisung">
+                    Öffnet den Umschlag mit dem Schlüsselsymbol.
+                </p>
+
+
+                <button
+                    id="weiter-button"
+                    class="nexus-button"
+                    type="button">
+
+                    WEITER
+
+                </button>
+
+
+                <!-- PASSWORTBEREICH -->
+
+                <div
+                    id="passwort-bereich"
+                    class="passwort-bereich">
+
+                    <div class="trennlinie"></div>
+
+                    <p class="passwort-anweisung">
+                        Gebt das Lösungswort ein, um die Prüfung
+                        digital abzuschließen.
+                    </p>
+
+
+                    <label for="loesungswort">
+                        LÖSUNGSWORT
+                    </label>
+
+                    <input
+                        type="text"
+                        id="loesungswort"
+                        autocomplete="off"
+                    >
+
+
+                    <button
+                        id="passwort-button"
+                        class="nexus-button"
+                        type="button">
+
+                        BESTÄTIGEN
+
+                    </button>
+
+
+                    <p
+                        id="passwort-fehler"
+                        class="passwort-fehler">
+
+                        Lösungswort nicht erkannt.
+
+                    </p>
+
+                </div>
+
+
+                <!-- ABSCHLUSS -->
+
+                <div
+                    id="abschluss-bereich"
+                    class="abschluss-bereich">
+
+                    <p class="abschluss-status">
+                        ✓ PRÜFUNG DIGITAL ABGESCHLOSSEN
+                    </p>
+
+                    <p>
+                        Der Ausbildungsfortschritt wurde
+                        aktualisiert.
+                    </p>
+
+
+                    <a
+                        href="pruefungen.html"
+                        class="nexus-button zur-uebersicht">
+
+                        ZUR PRÜFUNGSÜBERSICHT
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             HINWEISE RECHTS
+             ===================================== -->
+
+        <aside class="hinweisleiste">
+
+            <p class="hinweisleiste-titel">
+                HINWEISE
+            </p>
+
+
+            <button
+                class="hinweis-button"
+                data-hinweis="1"
+                type="button">
+
+                HINWEIS 01
+
+            </button>
+
+
+            <button
+                class="hinweis-button"
+                data-hinweis="2"
+                type="button">
+
+                HINWEIS 02
+
+            </button>
+
+
+            <button
+                class="hinweis-button"
+                data-hinweis="3"
+                type="button">
+
+                HINWEIS 03
+
+            </button>
+
+        </aside>
+
+    </main>
+
+
+    <!-- =====================================
+         HINWEISFENSTER
+         ===================================== -->
+
+    <div
+        id="hinweis-fenster"
+        class="hinweis-fenster">
+
+        <div class="hinweis-dialog">
+
+            <div class="hinweis-dialog-kopf">
+
+                <span id="hinweis-titel">
+                    HINWEIS
+                </span>
+
+                <button
+                    id="hinweis-schliessen"
+                    type="button">
+
+                    ×
+
+                </button>
+
+            </div>
+
+
+            <p id="hinweis-text">
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="netzwerk-footer">
+
+        <span>
+            N.E.X.U.S. INTERN
+        </span>
+
+        <span>
+            PRÜFUNG 01 · KRYPTOGRAPHIE
+        </span>
+
+    </footer>
+
+
+    <script src="script-kryptographie.js"></script>
+
+</body>
+
+</html>

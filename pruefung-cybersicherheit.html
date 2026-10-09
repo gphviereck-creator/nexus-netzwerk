@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.E.X.U.S. – Cybersicherheit</title>
+    <link rel="stylesheet" href="style-cybersicherheit.css">
+</head>
+
+<body class="netzwerk-seite">
+
+<header class="systemleiste">
+    <div class="systemleiste-oben">
+        <div class="systemstatus-kopf">
+            <div><span class="status-punkt"></span>
+                NETZWERK: <strong>ONLINE</strong></div>
+            <div><span class="status-punkt"></span>
+                VERBINDUNG: <strong>GESICHERT</strong></div>
+        </div>
+
+        <div class="nexus-name">N.E.X.U.S.</div>
+
+        <div class="benutzer-info">
+            <span>RANG: <strong>NOVIZE</strong></span>
+            <span>BENUTZER: <strong>TEAM GEISTERFÜCHSE</strong></span>
+        </div>
+    </div>
+
+    <nav class="navigation">
+        <a href="netzwerk.html">START</a>
+        <a href="#">NACHRICHTEN</a>
+
+        <div class="nav-dropdown">
+            <button class="nav-dropdown-button nav-aktiv" type="button">
+                AUS- UND WEITERBILDUNG ▼
+            </button>
+            <div class="nav-dropdown-inhalt">
+                <a href="pruefungen.html">PRÜFUNGSMODUL</a>
+            </div>
+        </div>
+
+        <a href="#">ARCHIV</a>
+    </nav>
+</header>
+
+<main class="cyber-hauptbereich">
+    <div class="nexus-wasserzeichen"></div>
+
+    <section class="cyber-inhalt">
+
+        <div class="pruefungs-kopf">
+            <p class="pruefungs-nummer">PRÜFUNG 04</p>
+            <h1>CYBERSICHERHEIT</h1>
+            <p class="pruefungs-beschreibung">
+                Digitale Systeme schützen
+            </p>
+        </div>
+
+        <!-- EINLEITUNGSVIDEO -->
+        <section class="auftragsfenster" id="schritt-1">
+            <p class="fenster-titel">EINLEITUNG · GHOST</p>
+
+            <div class="video-platzhalter" id="video-platzhalter">
+                <span>VIDEO WIRD NOCH EINGEFÜGT</span>
+            </div>
+
+            <!-- Später den Platzhalter durch ein Video ersetzen -->
+
+            <button class="nexus-button" id="weiter-1" type="button">
+                WEITER
+            </button>
+        </section>
+
+        <!-- NACHRICHTEN -->
+        <section class="auftragsfenster versteckt" id="schritt-2">
+            <p class="fenster-titel">NACHRICHTENKONTROLLE</p>
+
+            <p class="aufgaben-text">
+                Überprüft eure Nachrichten.
+            </p>
+
+            <button class="nexus-button" id="weiter-2" type="button">
+                WEITER
+            </button>
+        </section>
+
+        <!-- PHISHING -->
+        <section class="auftragsfenster versteckt" id="schritt-3">
+            <p class="fenster-titel">PHISHING-KONTROLLE</p>
+
+            <p class="aufgaben-text">
+                3 Nachrichten sind echt.
+                Prüft, ob ihr auf dem richtigen Weg seid.
+            </p>
+
+            <label for="phishing-code">PRÜFCODE</label>
+            <input type="text" id="phishing-code"
+                   inputmode="numeric" maxlength="3"
+                   autocomplete="off">
+
+            <button class="nexus-button" id="phishing-pruefen"
+                    type="button">
+                BESTÄTIGEN
+            </button>
+
+            <p class="fehlermeldung" id="phishing-fehler" role="alert">
+                Code nicht erkannt.
+            </p>
+
+            <!-- ZUGRIFFSPROTOKOLLE -->
+            <div class="ergebnis-bereich versteckt" id="protokoll-bereich">
+                <p class="aufgaben-text">
+                    Prüft die Zugriffsprotokolle,
+                    um den Eindringling zu entlarven.
+                </p>
+
+                <div class="protokoll-bilder">
+                    <div class="bild-platzhalter">
+                        ZUGRIFFSPROTOKOLL 01
+                        <small>Bild später einfügen</small>
+                    </div>
+                    <div class="bild-platzhalter">
+                        ZUGRIFFSPROTOKOLL 02
+                        <small>Bild später einfügen</small>
+                    </div>
+                    <div class="bild-platzhalter">
+                        ZUGRIFFSPROTOKOLL 03
+                        <small>Bild später einfügen</small>
+                    </div>
+                </div>
+
+                <p class="aufgaben-text">
+                    Welcher Benutzer ist der Eindringling?
+                </p>
+
+                <div class="auswahl-bereich">
+                    <label>
+                        <input type="radio" name="eindringling" value="1">
+                        Benutzer 01
+                    </label>
+                    <label>
+                        <input type="radio" name="eindringling" value="2">
+                        Benutzer 02
+                    </label>
+                    <label>
+                        <input type="radio" name="eindringling" value="3">
+                        Benutzer 03
+                    </label>
+                </div>
+
+                <button class="nexus-button" id="eindringling-pruefen"
+                        type="button">
+                    AUSWAHL BESTÄTIGEN
+                </button>
+
+                <p class="fehlermeldung" id="eindringling-fehler"
+                   role="alert">
+                    Eindringling nicht erkannt.
+                </p>
+            </div>
+        </section>
+
+        <!-- GEGENMASSNAHMEN -->
+        <section class="auftragsfenster versteckt" id="schritt-4">
+            <p class="fenster-titel">SYSTEMSICHERUNG</p>
+
+            <p class="aufgaben-text">
+                Aktiviert Gegenmaßnahmen.
+            </p>
+
+            <label for="gegenmassnahme-code">
+                AKTIVIERUNGSCODE
+            </label>
+
+            <input type="text" id="gegenmassnahme-code"
+                   autocomplete="off">
+
+            <button class="nexus-button" id="gegenmassnahme-pruefen"
+                    type="button">
+                AKTIVIEREN
+            </button>
+
+            <p class="fehlermeldung" id="gegenmassnahme-fehler"
+               role="alert">
+                Aktivierungscode nicht erkannt.
+            </p>
+
+            <div class="ergebnis-bereich versteckt" id="bestaetigung">
+                <p class="erfolg-text">
+                    BESTÄTIGT: GEGENMASSNAHMEN AKTIVIERT.
+                    EINDRINGLING ENTFERNT.
+                </p>
+
+                <button class="nexus-button" id="weiter-3" type="button">
+                    WEITER
+                </button>
+            </div>
+        </section>
+
+        <!-- ABSCHLUSS -->
+        <section class="auftragsfenster versteckt" id="abschluss-bereich">
+            <p class="erfolg-text">
+                ✓ PRÜFUNG DIGITAL ABGESCHLOSSEN
+            </p>
+
+            <p class="aufgaben-text">
+                Die Prüfung Cybersicherheit wurde abgeschlossen.
+                Die nächste Prüfung wurde freigeschaltet.
+            </p>
+
+            <a href="pruefungen.html" class="nexus-button">
+                ZUR PRÜFUNGSÜBERSICHT
+            </a>
+        </section>
+
+    </section>
+
+    <!-- HINWEISE -->
+    <aside class="hinweisleiste">
+        <p class="hinweisleiste-titel">HINWEISE</p>
+
+        <button class="hinweis-button" data-hinweis="1"
+                type="button">HINWEIS 01</button>
+        <button class="hinweis-button" data-hinweis="2"
+                type="button">HINWEIS 02</button>
+        <button class="hinweis-button" data-hinweis="3"
+                type="button">HINWEIS 03</button>
+    </aside>
+</main>
+
+<!-- HINWEISFENSTER -->
+<div class="hinweis-fenster" id="hinweis-fenster">
+    <div class="hinweis-dialog" role="dialog"
+         aria-modal="true" aria-labelledby="hinweis-titel">
+
+        <div class="hinweis-dialog-kopf">
+            <span id="hinweis-titel">HINWEIS</span>
+            <button id="hinweis-schliessen" type="button"
+                    aria-label="Hinweis schließen">×</button>
+        </div>
+
+        <p id="hinweis-text"></p>
+    </div>
+</div>
+
+<footer class="netzwerk-footer">
+    <span>N.E.X.U.S. INTERN</span>
+    <span>PRÜFUNG 04 · CYBERSICHERHEIT</span>
+</footer>
+
+<script src="script-cybersicherheit.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+/* =========================================
+   N.E.X.U.S. – INTERNES NETZWERK
+   ========================================= */
+
+.netzwerk-seite {
+    min-height: 100vh;
+    margin: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #0d1c29 0%,
+            #071019 50%,
+            #020609 100%
+        );
+
+    color: #d8e5ed;
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   OBERE SYSTEMLEISTE
+   ========================================= */
+
+.systemleiste {
+    position: relative;
+    z-index: 10;
+
+    width: 100%;
+
+    background: rgba(2, 8, 13, 0.96);
+
+    border-bottom: 1px solid #31566d;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+.systemleiste-oben {
+    min-height: 75px;
+
+    padding: 12px 5%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr auto 1fr;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   STATUS LINKS
+   ========================================= */
+
+.systemstatus-kopf {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    color: #718c9c;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+}
+
+
+.systemstatus-kopf div {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+.systemstatus-kopf strong {
+    color: #7caf91;
+}
+
+
+.status-punkt {
+    width: 6px;
+    height: 6px;
+
+    margin-right: 3px;
+
+    background: #79a98e;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 7px rgba(121, 169, 142, 0.7);
+}
+
+
+/* =========================================
+   N.E.X.U.S. OBEN MITTIG
+   ========================================= */
+
+.nexus-name {
+    color: #c7deea;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    letter-spacing: 7px;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   BENUTZER RECHTS
+   ========================================= */
+
+.benutzer-info {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 7px;
+
+    color: #718c9c;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+}
+
+
+.benutzer-info strong {
+    color: #c1d9e5;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+.navigation .nav-aktiv {
+    color: #c7deea;
+
+    border-bottom-color: #5685a0;
+
+    background: rgba(70,120,150,0.06);
+}
+
+.navigation {
+    display: flex;
+
+    justify-content: center;
+
+    border-top:
+        1px solid rgba(70, 110, 135, 0.22);
+}
+
+
+.navigation a {
+    padding: 14px 30px;
+
+    color: #8ca8b8;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    transition: 0.25s;
+
+    border-bottom:
+        2px solid transparent;
+}
+
+
+.navigation a:hover {
+    color: #d0e4ed;
+
+    background:
+        rgba(70, 120, 150, 0.08);
+
+    border-bottom-color: #5685a0;
+}
+
+/* =========================================
+   DROPDOWN – AUS- UND WEITERBILDUNG
+   ========================================= */
+
+.nav-dropdown {
+    position: relative;
+
+    display: flex;
+}
+
+
+.nav-dropdown-button {
+    padding: 14px 30px;
+
+    background: transparent;
+
+    border: none;
+    border-bottom: 2px solid transparent;
+
+    color: #8ca8b8;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.dropdown-pfeil {
+    margin-left: 8px;
+
+    font-size: 7px;
+}
+
+
+.nav-dropdown-button:hover {
+    color: #d0e4ed;
+
+    background:
+        rgba(70, 120, 150, 0.08);
+
+    border-bottom-color: #5685a0;
+}
+
+
+/* Ausgeklapptes Menü */
+
+.nav-dropdown-inhalt {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    min-width: 100%;
+
+    display: none;
+
+    background:
+        rgba(3, 10, 16, 0.98);
+
+    border: 1px solid #29485a;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.45);
+
+    z-index: 100;
+}
+
+
+.nav-dropdown-inhalt a {
+    display: block;
+
+    padding: 15px 25px;
+
+    color: #8ca8b8;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    white-space: nowrap;
+
+    border-bottom: none;
+}
+
+
+.nav-dropdown-inhalt a:hover {
+    color: #d0e4ed;
+
+    background:
+        rgba(70, 120, 150, 0.12);
+}
+
+
+/* Menü öffnen */
+
+.nav-dropdown.offen .nav-dropdown-inhalt {
+    display: block;
+}
+
+
+.nav-dropdown.offen .dropdown-pfeil {
+    display: inline-block;
+
+    transform: rotate(180deg);
+}

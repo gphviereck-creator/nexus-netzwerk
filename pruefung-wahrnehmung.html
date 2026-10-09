@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>N.E.X.U.S. – Wahrnehmung</title>
+
+    <link rel="stylesheet" href="style-wahrnehmung.css">
+</head>
+
+<body class="wahrnehmung-seite">
+
+    <!-- SYSTEMKOPF -->
+
+    <header class="systemleiste">
+
+        <div class="systemleiste-oben">
+
+            <div class="systemstatus-kopf">
+                <div>
+                    <span class="status-punkt"></span>
+                    NETZWERK: <strong>ONLINE</strong>
+                </div>
+                <div>
+                    <span class="status-punkt"></span>
+                    VERBINDUNG: <strong>GESICHERT</strong>
+                </div>
+            </div>
+
+            <div class="nexus-name">
+                N.E.X.U.S.
+            </div>
+
+            <div class="benutzer-info">
+                <span>RANG: <strong>NOVIZE</strong></span>
+                <span>BENUTZER: <strong>TEAM GEISTERFÜCHSE</strong></span>
+            </div>
+
+        </div>
+
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+
+            <a href="netzwerk.html">START</a>
+
+            <a href="#">NACHRICHTEN</a>
+
+            <div class="nav-dropdown">
+
+                <button class="nav-dropdown-button nav-aktiv" type="button">
+                    AUS- UND WEITERBILDUNG
+                    <span class="dropdown-pfeil">▼</span>
+                </button>
+
+                <div class="nav-dropdown-inhalt">
+                    <a href="pruefungen.html">PRÜFUNGSMODUL</a>
+                </div>
+
+            </div>
+
+            <a href="#">ARCHIV</a>
+
+        </nav>
+
+    </header>
+
+    <!-- HAUPTBEREICH -->
+
+    <main class="wahrnehmung-hauptbereich">
+
+        <div class="nexus-wasserzeichen"></div>
+
+        <section class="wahrnehmung-inhalt">
+
+            <div class="pruefungs-kopf">
+                <p class="pruefungs-nummer">PRÜFUNG 02</p>
+                <h1>WAHRNEHMUNG</h1>
+                <p class="pruefungs-beschreibung">
+                    Sehen · Hören · Riechen · Erkennen
+                </p>
+            </div>
+
+            <!-- AUFGABE 1 -->
+
+            <section class="auftragsfenster" id="aufgabe-1">
+
+                <p class="fenster-titel">AUFGABE 01 · SEHEN</p>
+
+                <video controls playsinline preload="metadata">
+                    <source src="video-wahrnehmung.mp4" type="video/mp4">
+                    Dein Browser unterstützt dieses Video nicht.
+                </video>
+
+                <p class="aufgaben-text">
+                    Beobachtet das Video aufmerksam.
+                    Welches Tier weist euch den Weg?
+                </p>
+
+                <label for="antwort-1">LÖSUNGSWORT</label>
+
+                <input type="text" id="antwort-1" autocomplete="off">
+
+                <button class="nexus-button" id="pruefen-1" type="button">
+                    BESTÄTIGEN
+                </button>
+
+                <p class="fehlermeldung" id="fehler-1" role="alert">
+                    Antwort nicht erkannt.
+                </p>
+
+                <!-- EULENSYMBOL -->
+
+                <div class="ergebnis-bereich" id="ergebnis-1">
+
+                    <img
+                        src="nexus-eule.png"
+                        alt="Persönliches Symbol der N.E.X.U.S.-Eule"
+                        class="eulen-symbol"
+                    >
+
+                    <p class="ergebnis-text">
+                        Öffnet den Umschlag mit diesem Symbol.
+                    </p>
+
+                    <button class="nexus-button" id="weiter-1" type="button">
+                        WEITER
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- AUFGABE 2 -->
+
+            <section class="auftragsfenster versteckt" id="aufgabe-2">
+
+                <p class="fenster-titel">AUFGABE 02 · HÖREN</p>
+
+                <video controls playsinline preload="metadata">
+                    <source src="video-echo.mp4" type="video/mp4">
+                    Dein Browser unterstützt dieses Video nicht.
+                </video>
+
+                <p class="aufgaben-text">
+                    Hört genau hin und entschlüsselt den fünfstelligen Code.
+                </p>
+
+                <label for="antwort-2">FÜNFSTELLIGER CODE</label>
+
+                <input
+                    type="text"
+                    id="antwort-2"
+                    inputmode="numeric"
+                    maxlength="5"
+                    autocomplete="off"
+                >
+
+                <button class="nexus-button" id="pruefen-2" type="button">
+                    BESTÄTIGEN
+                </button>
+
+                <p class="fehlermeldung" id="fehler-2" role="alert">
+                    Code nicht erkannt.
+                </p>
+
+            </section>
+
+            <!-- AUFGABE 3 -->
+
+            <section class="auftragsfenster versteckt" id="aufgabe-3">
+
+                <p class="fenster-titel">AUFGABE 03 · GEFAHRENERKENNUNG</p>
+
+                <p class="aufgaben-text">
+                    Gefahren sind nicht immer sichtbar.
+                    Welcher Geruch sollte euch vorsichtig machen?
+                </p>
+
+                <label for="antwort-3">ANTWORT</label>
+
+                <input type="text" id="antwort-3" autocomplete="off">
+
+                <button class="nexus-button" id="pruefen-3" type="button">
+                    BESTÄTIGEN
+                </button>
+
+                <p class="fehlermeldung" id="fehler-3" role="alert">
+                    Antwort nicht erkannt.
+                </p>
+
+            </section>
+
+            <!-- AUFGABE 4 -->
+
+            <section class="auftragsfenster versteckt" id="aufgabe-4">
+
+                <p class="fenster-titel">AUFGABE 04 · ABSCHLUSS</p>
+
+                <p class="aufgaben-text">
+                    Ein guter Agent nutzt jeden verfügbaren Sinn –
+                    aber niemals auf Kosten seiner Sicherheit.
+                    Welcher Sinn fehlt?
+                </p>
+
+                <label for="antwort-4">ANTWORT</label>
+
+                <input type="text" id="antwort-4" autocomplete="off">
+
+                <button class="nexus-button" id="pruefen-4" type="button">
+                    BESTÄTIGEN
+                </button>
+
+                <p class="fehlermeldung" id="fehler-4" role="alert">
+                    Antwort nicht erkannt.
+                </p>
+
+            </section>
+
+            <!-- PRÜFUNGSABSCHLUSS -->
+
+            <section class="auftragsfenster abschluss-bereich versteckt"
+                     id="abschluss-bereich"
+                     aria-live="polite">
+
+                <p class="abschluss-status">
+                    ✓ PRÜFUNG DIGITAL ABGESCHLOSSEN
+                </p>
+
+                <p>
+                    Die Prüfung Wahrnehmung wurde erfolgreich abgeschlossen.
+                    Die nächste Prüfung wurde freigeschaltet.
+                </p>
+
+                <a href="pruefungen.html" class="nexus-button">
+                    ZUR PRÜFUNGSÜBERSICHT
+                </a>
+
+            </section>
+
+        </section>
+
+        <!-- HINWEISLEISTE -->
+
+        <aside class="hinweisleiste">
+
+            <p class="hinweisleiste-titel">HINWEISE</p>
+
+            <button class="hinweis-button" data-hinweis="1" type="button">
+                HINWEIS 01
+            </button>
+
+            <button class="hinweis-button" data-hinweis="2" type="button">
+                HINWEIS 02
+            </button>
+
+            <button class="hinweis-button" data-hinweis="3" type="button">
+                HINWEIS 03
+            </button>
+
+        </aside>
+
+    </main>
+
+    <!-- HINWEISFENSTER -->
+
+    <div class="hinweis-fenster" id="hinweis-fenster">
+
+        <div class="hinweis-dialog" role="dialog"
+             aria-modal="true" aria-labelledby="hinweis-titel">
+
+            <div class="hinweis-dialog-kopf">
+                <span id="hinweis-titel">HINWEIS</span>
+
+                <button id="hinweis-schliessen"
+                        type="button"
+                        aria-label="Hinweis schließen">
+                    ×
+                </button>
+            </div>
+
+            <p id="hinweis-text"></p>
+
+        </div>
+
+    </div>
+
+    <footer class="netzwerk-footer">
+        <span>N.E.X.U.S. INTERN</span>
+        <span>PRÜFUNG 02 · WAHRNEHMUNG</span>
+    </footer>
+
+    <script src="script-wahrnehmung.js"></script>
+
+</body>
+</html>

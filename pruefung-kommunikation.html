@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.E.X.U.S. – Kommunikation</title>
+    <link rel="stylesheet" href="style-kommunikation.css">
+</head>
+
+<body class="netzwerk-seite kommunikation-seite">
+
+    <!-- SYSTEMKOPF -->
+    <header class="systemleiste">
+        <div class="systemleiste-oben">
+
+            <div class="systemstatus-kopf">
+                <div>
+                    <span class="status-punkt"></span>
+                    NETZWERK: <strong>ONLINE</strong>
+                </div>
+                <div>
+                    <span class="status-punkt"></span>
+                    VERBINDUNG: <strong>GESICHERT</strong>
+                </div>
+            </div>
+
+            <div class="nexus-name">N.E.X.U.S.</div>
+
+            <div class="benutzer-info">
+                <span>RANG: <strong>NOVIZE</strong></span>
+                <span>BENUTZER: <strong>TEAM GEISTERFÜCHSE</strong></span>
+            </div>
+
+        </div>
+
+        <nav class="navigation">
+            <a href="netzwerk.html">START</a>
+            <a href="#">NACHRICHTEN</a>
+
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-button nav-aktiv" type="button">
+                    AUS- UND WEITERBILDUNG
+                    <span class="dropdown-pfeil">▼</span>
+                </button>
+
+                <div class="nav-dropdown-inhalt">
+                    <a href="pruefungen.html">PRÜFUNGSMODUL</a>
+                </div>
+            </div>
+
+            <a href="#">ARCHIV</a>
+        </nav>
+    </header>
+
+    <!-- HAUPTBEREICH -->
+    <main class="kommunikation-hauptbereich">
+
+        <div class="nexus-wasserzeichen"></div>
+
+        <section class="kommunikation-inhalt">
+
+            <div class="pruefungs-kopf">
+                <p class="pruefungs-nummer">PRÜFUNG 03</p>
+                <h1>KOMMUNIKATION</h1>
+                <p class="pruefungs-beschreibung">
+                    Nachrichten empfangen und übermitteln
+                </p>
+            </div>
+
+            <!-- SCHRITT 1: AUDIO 1 -->
+            <section class="auftragsfenster" id="schritt-1">
+                <p class="fenster-titel">
+                    EINGEHENDE AUDIONACHRICHT 01
+                </p>
+
+                <audio controls preload="metadata">
+                    <source src="kommunikation-audio-1.mp3" type="audio/mpeg">
+                    Dein Browser unterstützt diese Audiodatei nicht.
+                </audio>
+
+                <button class="nexus-button" id="weiter-1" type="button">
+                    WEITER
+                </button>
+            </section>
+
+            <!-- SCHRITT 2: DIGITALER SCHALTER -->
+            <section class="auftragsfenster versteckt" id="schritt-2">
+
+                <p class="fenster-titel">DIGITALER SCHALTER</p>
+
+                <p class="aufgaben-text">
+                    Stellt den dreistelligen Zugangscode ein.
+                </p>
+
+                <div class="zahlenschalter" id="zahlenschalter">
+
+                    <div class="zahlenrad">
+                        <button type="button" class="rad-plus" data-rad="0"
+                                aria-label="Erste Ziffer erhöhen">+</button>
+                        <span class="rad-wert" id="ziffer-0">0</span>
+                        <button type="button" class="rad-minus" data-rad="0"
+                                aria-label="Erste Ziffer verringern">−</button>
+                    </div>
+
+                    <div class="zahlenrad">
+                        <button type="button" class="rad-plus" data-rad="1"
+                                aria-label="Zweite Ziffer erhöhen">+</button>
+                        <span class="rad-wert" id="ziffer-1">0</span>
+                        <button type="button" class="rad-minus" data-rad="1"
+                                aria-label="Zweite Ziffer verringern">−</button>
+                    </div>
+
+                    <div class="zahlenrad">
+                        <button type="button" class="rad-plus" data-rad="2"
+                                aria-label="Dritte Ziffer erhöhen">+</button>
+                        <span class="rad-wert" id="ziffer-2">0</span>
+                        <button type="button" class="rad-minus" data-rad="2"
+                                aria-label="Dritte Ziffer verringern">−</button>
+                    </div>
+
+                </div>
+
+                <button class="nexus-button" id="schalter-pruefen" type="button">
+                    CODE BESTÄTIGEN
+                </button>
+
+                <p class="fehlermeldung" id="schalter-fehler" role="alert">
+                    Zugangscode nicht erkannt.
+                </p>
+
+                <!-- AUDIO 2 -->
+                <div class="ergebnis-bereich versteckt" id="audio-2-bereich">
+
+                    <p class="fenster-titel">
+                        EINGEHENDE AUDIONACHRICHT 02
+                    </p>
+
+                    <audio controls preload="metadata" id="audio-2">
+                        <source src="kommunikation-audio-2.mp3" type="audio/mpeg">
+                        Dein Browser unterstützt diese Audiodatei nicht.
+                    </audio>
+
+                    <p class="geheime-nachricht">
+                        Nicht immer ist alles sofort sichtbar.
+                    </p>
+
+                    <button class="nexus-button" id="weiter-2" type="button">
+                        WEITER
+                    </button>
+                </div>
+            </section>
+
+            <!-- SCHRITT 3: DREI EINGABEFELDER -->
+            <section class="auftragsfenster versteckt" id="schritt-3">
+
+                <p class="fenster-titel">
+                    NACHRICHTENÜBERMITTLUNG
+                </p>
+
+                <p class="aufgaben-text">
+                    Übermittelt die drei gesuchten Informationen.
+                </p>
+
+                <div class="eingabe-gruppe">
+                    <label for="antwort-1">INFORMATION 01</label>
+                    <input type="text" id="antwort-1" autocomplete="off">
+                </div>
+
+                <div class="eingabe-gruppe">
+                    <label for="antwort-2">INFORMATION 02</label>
+                    <input type="text" id="antwort-2" autocomplete="off">
+                </div>
+
+                <div class="eingabe-gruppe">
+                    <label for="antwort-3">INFORMATION 03</label>
+                    <input type="text" id="antwort-3" autocomplete="off">
+                </div>
+
+                <button class="nexus-button" id="antworten-pruefen" type="button">
+                    NACHRICHT ÜBERMITTELN
+                </button>
+
+                <p class="fehlermeldung" id="antworten-fehler" role="alert">
+                    Übermittlung fehlgeschlagen. Überprüft eure Angaben.
+                </p>
+
+                <!-- BESTÄTIGUNG -->
+                <div class="ergebnis-bereich versteckt" id="bestaetigung">
+
+                    <p class="erfolg-text">
+                        NACHRICHT EMPFANGEN
+                    </p>
+
+                    <p class="bestaetigungscode">
+                        BESTÄTIGUNGSCODE: <strong>793</strong>
+                    </p>
+
+                    <button class="nexus-button" id="weiter-3" type="button">
+                        WEITER
+                    </button>
+                </div>
+            </section>
+
+            <!-- ABSCHLUSS -->
+            <section class="auftragsfenster versteckt" id="abschluss-bereich">
+
+                <p class="abschluss-status">
+                    ✓ PRÜFUNG DIGITAL ABGESCHLOSSEN
+                </p>
+
+                <p class="aufgaben-text">
+                    Die Prüfung Kommunikation wurde abgeschlossen.
+                    Die nächste Prüfung wurde freigeschaltet.
+                </p>
+
+                <a class="nexus-button" href="pruefungen.html">
+                    ZUR PRÜFUNGSÜBERSICHT
+                </a>
+            </section>
+
+        </section>
+
+        <!-- HINWEISE -->
+        <aside class="hinweisleiste">
+
+            <p class="hinweisleiste-titel">HINWEISE</p>
+
+            <button class="hinweis-button" data-hinweis="1" type="button">
+                HINWEIS 01
+            </button>
+
+            <button class="hinweis-button" data-hinweis="2" type="button">
+                HINWEIS 02
+            </button>
+
+            <button class="hinweis-button" data-hinweis="3" type="button">
+                HINWEIS 03
+            </button>
+
+        </aside>
+    </main>
+
+    <!-- HINWEISFENSTER -->
+    <div class="hinweis-fenster" id="hinweis-fenster">
+        <div class="hinweis-dialog" role="dialog"
+             aria-modal="true" aria-labelledby="hinweis-titel">
+
+            <div class="hinweis-dialog-kopf">
+                <span id="hinweis-titel">HINWEIS</span>
+                <button id="hinweis-schliessen" type="button"
+                        aria-label="Hinweis schließen">×</button>
+            </div>
+
+            <p id="hinweis-text"></p>
+        </div>
+    </div>
+
+    <footer class="netzwerk-footer">
+        <span>N.E.X.U.S. INTERN</span>
+        <span>PRÜFUNG 03 · KOMMUNIKATION</span>
+    </footer>
+
+    <script src="script-kommunikation.js"></script>
+</body>
+</html>
