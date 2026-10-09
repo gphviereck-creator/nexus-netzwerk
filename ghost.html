@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>N.E.X.U.S. | Nachricht von Ghost</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(
+        circle at center,
+        #10283a,
+        #050910 80%
+      );
+      color: #e0e9f0;
+      font-family: Georgia, serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .nachricht {
+      width: 100%;
+      max-width: 520px;
+      padding: 35px 25px;
+      text-align: center;
+      border: 1px solid #4684a5;
+      background: rgba(8, 20, 32, 0.92);
+      box-shadow: 0 0 30px #102e48;
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #b9d8eb;
+      letter-spacing: 5px;
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 19px;
+      color: #8dbbd2;
+      margin-top: 30px;
+    }
+
+    .linie {
+      height: 1px;
+      background: #416b84;
+      margin: 25px 0;
+    }
+
+    .status {
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: #79b8b0;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 25px;
+    }
+
+    .hinweis {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #a8bac8;
+      margin-top: 25px;
+    }
+
+    .geheim {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #6e91a6;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="nachricht">
+
+    <h1>N.E.X.U.S.</h1>
+
+    <p>Die Nacht verbirgt vieles –<br>
+       NEXUS findet alles.</p>
+
+    <div class="linie"></div>
+
+    <p class="status">VERTRAULICHE ÜBERTRAGUNG</p>
+
+    <h2>Nachricht von Agent Ghost</h2>
+
+    <p class="hinweis">
+      Eine verschlüsselte Nachricht wurde
+      für euch hinterlegt.
+    </p>
+
+    <!--
+      Später die Datei ghost.mp3
+      in denselben Ordner legen.
+    -->
+
+    <audio controls preload="none">
+      <source src="ghost.mp3" type="audio/mpeg">
+      Dein Browser unterstützt keine Audiowiedergabe.
+    </audio>
+
+    <p class="hinweis">
+      Die Übertragung wird vorbereitet.
+      Sobald die Nachricht freigegeben ist,
+      kann sie hier abgespielt werden.
+    </p>
+
+    <div class="linie"></div>
+
+    <p class="geheim">
+      N.E.X.U.S. // NUR FÜR AUTORISIERTE EMPFÄNGER
+    </p>
+
+  </main>
+
+</body>
+</html>
